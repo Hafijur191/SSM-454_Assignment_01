@@ -8,96 +8,169 @@ body{
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 
-
-/* header section */
-
+/* header start */
 
 .header{
     width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    position: fixed;
+    background-color: #fff;
 }
 .container{
     width: 1140px;
     margin: auto;
 }
+.h-b{
+    display: flex;
+}
 .logo{
-    width: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    flex-basis: 20%;
+    margin: auto;
 }
 .menu{
-    text-align: center;
+    flex-basis: 60%;
+    margin: auto;
+}
+.login{
+    flex-basis: 20%;
+    margin: auto;
+}
+.logo img{
+    width: 100px;
 }
 .menu li{
     list-style: none;
     display: inline-block;
-    margin-right: 18px;
-    margin-left: 18px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
 }
-.menu a{
-    color: black;
-    text-decoration: none;
+.menu li a{
+    color: #1e266d;
     display: inline-block;
-    transition: 1s;
+    transition: 0.4s;
 }
-.menu a:hover{
-    color: black;
-    transform: scale(1.5);
+.menu li a:hover{
+    color: blueviolet;
+    transform: scale(1.2);
     display: inline-block;
-    transition: 1s;
+    transition: 0.4s;
+}
+.login a{
+    background-color: #2e367d;
+    color: #fff;
+    transition: 0.4s;
+    padding: 10px 20px;
+    border-radius: 1px;
+    font-size: 16px;
+}
+.login a:hover{
+    background-color: #0071cc;
+    transition: 0.4s;
 }
 
-/* banner section */
+/* banner start */
 
 .banner{
     width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
-.main-box{
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.b-b{
     display: flex;
 }
-.left{
+.b-l{
     flex-basis: 50%;
-}
-.right{
-    flex-basis: 50%;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-.left{
     margin-top: 100px;
 }
-.left h2{
+.b-r{
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+.b-l h2{
     font-size: 45px;
+    color: #1e266d;
+    line-height: 50px;
     font-weight: 700;
-    color: #1e266d;
+    margin-bottom: 10px;
 }
-.left p{
-    font-size: 22px;
-    font-weight: 300;
-    margin-top: 20px;
+.b-l p{
     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 22px;
     color: #1e266d;
+    line-height: 28px;
+    font-weight: 300;
 }
-.left .banner-btn{
-    background: #2e367d;
+.b-l a{
+    background-color: #2e367d;
     color: #fff;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 8px;
+    transition: 0.4s;
     display: inline-block;
+}
+.b-l a:hover{
+    background-color: #0071cc;
+    transition: 0.4s;
+}
+
+/* earn start */
+
+.earn{
+    width: 100%;
+}
+.e-box{
+    display: flex;
+}
+.graduates{
+    flex-basis: 33.333333%;
+    background-color: #f9799a;
+    color: #fff;
+    padding: 15px 15px;
     border-radius: 8px;
 }
-.left .banner-btn:hover{
-    background-color: #0071cc;
+.earned{
+    flex-basis: 33.333333%;
+    background-color: #61c4d8;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 8px;
 }
-.right{
-    margin-top: 40px;
+.members{
+    flex-basis: 33.333333%;
+    background-color: #1e266d;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 8px;
+}
+.graduates h3, .earned h3, .members h3{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.graduates p, .earned p, .members p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.g-main, .e-main, .m-main{
+    padding: 15px 15px;
+}
+.m-main{
+    padding-right: 60px;
 }
 
 /* projects section */
@@ -164,6 +237,7 @@ img{
 
 .support{
     width: 100%;
+    background-color: #f5f7fa;
 }
 .support-box{
     display: flex;
@@ -283,6 +357,7 @@ img{
 
 .pc{
     width: 100%;
+    background-color: #f5f7fa;
 }
 .pc-box{
     display: flex;
@@ -365,8 +440,10 @@ img{
 .footer-item li{
     list-style: none;
     margin-bottom: 8px;
+    font-weight: 400;
 }
 .footer-item li a{
+    font-size: 16px;
     color: #526375;
     transition: 0.4s;
 }
@@ -470,3 +547,14 @@ img{
     color: #0c2f54;
     text-align: center;
 }
+
+.f-e{
+    text-align: center;
+}
+.f-e img{
+    width: 1140px;
+}
+.f-e p{
+    color: #526375;
+}
+
